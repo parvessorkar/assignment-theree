@@ -28,11 +28,79 @@
     <link rel="icon" type="image" href="./images/logo.png">
 
 </head>
-<body class="font-lato">  
-  <header class="max-w-7xl mx-auto">
-    <!-- nav section -->
-   
+<body class="font-lato w-[95%] mx-auto md:w-[100%] lg:w-[100%]">  
+  <header class="max-w-7xl mx-auto">   
 
+<!-- nav section -->
+ <nav class="bg-[#F85559] md:text-white md:rounded-full mb-12 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-black md:text-white text-lg font-bold">
+       <div class="flex items-center gap-2">
+        <img class="" src="./images/logo.png" alt="">
+        <p class="text-3xl font-semibold">Fruit Burst</p>
+       </div>
+
+      </div>
+
+      <!-- Mobile Menu Icon -->
+      <div class="flex md:hidden">
+        <button id="mobileMenuButton" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul class="hidden md:flex space-x-4 text-black md:text-white " id="desktopMenu">
+        <li><a href="#" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+        <li><a href="#" class="hover:text-gray-300">About</a></li>
+        <li><a href="#" class="hover:text-gray-300">Information</a></li>
+      </ul>
+
+      <!-- Search Bar -->
+      <div class="relative hidden md:block" id="desktopSearchBar">
+        <input type="text" class=" text-white rounded-full py-1 px-4 pr-10 focus:outline-none"
+          placeholder="Search">
+        <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-black">
+          <svg class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M15.5 15.5L20 20m-9.5-5.5a4 4 0 100-8 4 4 0 000 8zM6 10H2"></path>
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="hidden md:hidden" id="mobileMenu">
+      <ul class="mt-2 space-y-2 text-black md:text-black">
+        <li><a href="#" class="block hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="block hover:text-gray-300">Blog</a></li>
+        <li><a href="#" class="block hover:text-gray-300">About</a></li>
+        <li><a href="#" class="block hover:text-gray-200">Information</a></li>
+      </ul>
+
+      <!-- Search Bar (Mobile) -->
+      <div class="mt-4">
+        <input type="text" class="w-full bg-gray-600 text-black md:text-white rounded-full py-1 px-4 focus:outline-none"
+          placeholder="Search">
+      </div>
+    </div>
+  </nav>
+  <script>
+    // Toggle mobile menu visibility
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+   
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      
+    });
+  </script>
+  
        <!-- baner section -->
       <div class="carousel w-full ">
        
@@ -82,6 +150,7 @@
         
       </div>
   </header>
+
   <main class="max-w-7xl mx-auto">
   <!-- our special product -->
   <section class="my-32">
@@ -137,17 +206,17 @@
           <hr class="mx-9 my-5">
           <p>Apples</p>
           <div class="rating rating-md rating-half py-5">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="rating-hidden" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
           </div>
           <p class="text-[#F85559]">Details</p>
         </div>
@@ -163,17 +232,17 @@
           <hr class="mx-9 my-5">
           <p>Apples</p>
           <div class="rating rating-md rating-half py-5">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="rating-hidden" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
           </div>
           <p class="text-[#F85559]">Details</p>
         </div>
@@ -189,17 +258,17 @@
         <hr class="mx-9 my-5">
         <p>Apples</p>
         <div class="rating rating-md rating-half py-5">
-          <input type="radio" name="rating-10" class="rating-hidden" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-          <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-13" class="rating-hidden" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-13" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
         </div>
         <p class="text-[#F85559]">Details</p>
       </div>
@@ -221,7 +290,7 @@
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked />
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" checked/>
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
             <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
@@ -234,8 +303,9 @@
 
        </div>
   </section>
+
    <!-- team section -->
-   <section class="bg-[url('./images/team.png')] w-[100%] h-[100%] bg-no-repeat my-32 py-32">
+   <section class="bg-[url('./images/team.png')] w-[100%] bg-no-repeat lg:my-32 lg:py-32 border-8 border-red-500 h-screen md:h-[100%] bg-cover bg-center overflow-auto md:overflow-hidden">
 
    
         <h1 class="text-3xl text-center font-bold text-white pb-6">Meet the team section</h1>
