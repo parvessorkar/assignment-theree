@@ -23,6 +23,7 @@
       .font-lato{       
         font-family: 'Lato', sans-serif;
       }
+     
     </style>
     <!-- add fav icon -->
     <link rel="icon" type="image" href="./images/logo.png">
@@ -212,7 +213,7 @@
       </div>
       
       <div>
-      <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+      <div class="grid grid-flow-col gap-3 text-center auto-cols-max">
         <div class="flex flex-col p-2 text-extrabold">
           <span class="countdown font-mono text-5xl">
             <span style="--value:29;"></span>
@@ -376,7 +377,7 @@
   </section>
 
    <!-- team section -->
-   <section class="bg-[url('./images/team.png')] w-[100%] bg-no-repeat lg:my-32 lg:py-32 h-screen md:h-[100%] bg-cover bg-center overflow-auto md:overflow-hidden">
+   <section class="bg-[url('./images/team.png')] w-[100%] bg-no-repeat lg:my-32 lg:py-32 md:h-[100%] bg-cover bg-center overflow-auto md:overflow-hidden bg-opacity-60">
 
    
         <h1 class="text-3xl text-center font-bold text-white pb-6">Meet the team section</h1>
@@ -452,54 +453,60 @@
     <!-- why you choose us main section -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
      <!-- section left -->
-     <div class="flex-1">
+     <div class="flex-1 order-2 md:order-1">
 
-      <div class="flex gap-6">
+      <div class="flex flex-col md:flex-row md:text-left items-center text-center gap-6">
         <div>
           <a href=""><i class="fa-solid fa-people-group bg-gray-200 p-5 rounded-full"></i></a>
         </div>
         <div>
           <h3 class="text-2xl font-bold">Dedicated Team</h3>
-          <hr class="w-24 font-bold my-5">
+          <div class="flex items-center justify-center md:justify-start">
+            <hr class="w-24 font-bold my-5">
+          </div>
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
       </div>
-      <div class="flex gap-6 py-8">
+      <div class="flex gap-6 py-8  flex-col md:flex-row md:text-left items-center text-center">
         <div>
           <a href=""><i class="fa-solid fa-heart bg-gray-200 p-5 rounded-full"></i></a>
         </div>
         <div>
           <h3 class="text-2xl font-bold">Fresh is Best</h3>
-          <hr class="w-24 font-bold my-5">
+          <div class="flex items-center justify-center md:justify-start">
+            <hr class="w-24 font-bold my-5">
+          </div>
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
       </div>
-      <div class="flex gap-6">
+      <div class="flex gap-6  flex-col md:flex-row md:text-left items-center text-center">
         <div>
           <a href=""><i class="fa-solid fa-gift bg-gray-200 p-5 rounded-full"></i></a>
         </div>
         <div>
           <h3 class="text-2xl font-bold">Gift Certificates</h3>
-          <hr class="w-24 font-bold my-5">
+          <div class="flex items-center justify-center md:justify-start">
+            <hr class="w-24 font-bold my-5">
+          </div>
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
       </div>
 
      </div>
      <!-- section middle img -->
-     <div class="flex-1">
+     <div class="flex-1 order-1 md:order-2">
       <img class="h-full" src="./images/whychoose1.png" alt="">
      </div>
      <!-- section right -->
-    <div class="flex-1">
+    <div class="flex-1 order-3 md:order-3">
        
-      <div class="flex gap-6 flex-row-reverse text-right">
+      <div class="flex gap-6 md:flex-row-reverse md:text-right flex-col items-center text-center">
         <div class="">
           <a href=""><i class="fa-solid fa-carrot bg-gray-200 p-5 rounded-full"></i></a>
         </div>
         <div>
           <h3 class="text-2xl font-bold">Integrated Supplier</h3>
-          <div class="flex justify-end">
+          <div class="flex items-center justify-center md:justify-end">
             <hr class="w-24 font-bold my-5">
           </div>
          
@@ -507,13 +514,13 @@
         </div>
       </div>
      
-      <div class="flex gap-6 flex-row-reverse text-right py-8">
+      <div class="flex gap-6 md:flex-row-reverse md:text-right py-8 flex-col items-center text-center">
         <div class="">
           <a href=""><i class="fa-solid fa-ice-cream bg-gray-200 p-5 rounded-full"></i></a>
         </div>
         <div>
           <h3 class="text-2xl font-bold">Sustainable Practice</h3>
-          <div class="flex justify-end">
+          <div class="flex items-center justify-center md:justify-start md:justify-end">
             <hr class="w-24 font-bold my-5">
           </div>
          
@@ -521,15 +528,15 @@
         </div>
       </div>
      
-      <div class="flex gap-6 flex-row-reverse text-right ">
+      <div class="flex gap-6 md:flex-row-reverse md:text-right flex-col items-center text-center">
         <div class="">
           <a href=""><i class="fa-solid fa-thumbs-up bg-gray-200 p-5 rounded-full"></i></a>
         </div>
         <div>
           <h3 class="text-2xl font-bold">The Benefits Only</h3>
-          <div class="flex justify-end">
-            <hr class="w-24 font-bold my-5">
-          </div>
+        <div class="flex items-center justify-center  md:justify-end">
+          <hr class="w-24 font-bold my-5">
+        </div>
          
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
         </div>
